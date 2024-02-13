@@ -45,7 +45,8 @@ namespace TradingCardGameConsole
                 Console.WriteLine("\nGame Menu:");
                 Console.WriteLine("1. Draw Card");
                 Console.WriteLine("2. Sell Card");
-                Console.WriteLine("3. Back to Menu");
+                Console.WriteLine("3. Check Inventory");
+                Console.WriteLine("4. Back to Menu");
                 Console.Write("Choose an action: ");
 
                 switch (Console.ReadLine())
@@ -57,6 +58,9 @@ namespace TradingCardGameConsole
                         player.SellCard();
                         break;
                     case "3":
+                        player.CheckInventory(cards);
+                        break;
+                    case "4":
                         inGame = false;
                         break;
                     default:
@@ -65,6 +69,7 @@ namespace TradingCardGameConsole
                 }
             }
         }
+
 
         static void DisplayGameLore()
         {

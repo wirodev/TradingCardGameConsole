@@ -25,10 +25,9 @@ namespace TradingCardGameConsole
 
         public static void InitializeCardValues()
         {
-            //Random random = new();
             CommonCardValue = 50;
-            EpicCardValue = 95;
-            LegendaryCardValue = 150;
+            EpicCardValue = 150;
+            LegendaryCardValue = 200;
         }
 
         public static List<Card> CreateCards()
